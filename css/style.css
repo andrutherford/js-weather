@@ -1,0 +1,210 @@
+body {
+  font-family: 'Helvetica Neue Light', arial;
+  box-sizing: border-box;
+  background: url(../bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  font-weight: 100 !important;
+  font-size: 3em !important;
+  margin: 0 !important;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+
+}
+
+.btn {
+	-moz-box-shadow:inset 0px 1px 20px 0px #54a3f7;
+	-webkit-box-shadow:inset 0px 1px 20px 0px #54a3f7;
+	box-shadow:inset 0px 1px 20px 0px #54a3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color:#007dc1;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:15px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.btn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color:#0061a7;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.location-and-time {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.location,
+.time {
+  width: 45%;
+  height: 50px;
+}
+
+.location {
+  text-align: left;
+}
+
+.time {
+  text-align: right;
+}
+
+.summary {
+  margin: auto;
+  text-align: center;
+}
+
+.icon {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.temperature {
+  margin: auto;
+  text-align: center;
+}
+
+#temperature {
+  display: inline;
+}
+
+.unit1,
+.unit2  {
+  display: inline;
+}
+
+.weather-info {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-item {
+  width: 120px;
+  height: 100px;
+}
+
+.converters {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#refresh {
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(4px);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
